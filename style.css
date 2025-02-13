@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+body {
+    background: url('valentine-bg.jpg') no-repeat center center/cover;
+    text-align: center;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+h1 {
+    font-size: 3.5rem;
+    text-shadow: 3px 3px 10px rgba(255, 0, 0, 0.8);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.open-btn {
+    background: linear-gradient(to right, red, pink);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0px 5px 15px rgba(255, 0, 0, 0.5);
+}
+
+.open-btn:hover {
+    transform: scale(1.1);
+}
+
+.gift-box {
+    margin-top: 20px;
+}
+
+.heart-box {
+    width: 150px;
+    cursor: pointer;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.hidden {
+    display: none;
+}
+
+.proposal {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.5);
+}
+
+.buttons button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.yes-btn {
+    background: pink;
+    color: red;
+}
+
+.no-btn {
+    background: gray;
+    color: white;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}

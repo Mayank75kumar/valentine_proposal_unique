@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Surprise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <audio id="bg-music" loop autoplay>
+        <source src="background-music.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <h1>💘 Happy Valentine's Day 💘</h1>
+        <p class="subtitle">A Special Surprise Just for You</p>
+        <button class="open-btn" onclick="openGift()">🎁 Open Your Gift 🎁</button>
+
+        <div class="gift-box" id="gift-box">
+            <img src="heart-box.png" alt="Gift Box" class="heart-box">
+        </div>
+
+        <div class="proposal hidden" id="proposal">
+            <h2>You Make My Heart Skip a Beat! 💞</h2>
+            <p>Will You Be My Valentine?</p>
+            <div class="buttons">
+                <button class="yes-btn" onclick="acceptProposal()">Yes 💕</button>
+                <button class="no-btn" onclick="rejectProposal()">No 😢</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="confetti"></canvas>
+
+</body>
+</html>
